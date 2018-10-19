@@ -169,10 +169,10 @@ if(buttonInX < 20){
  lastButtonPushed = 2;
  }else if(buttonInY > 1000){
  // You are pressing up
- lastButtonPushed = 1;
+ lastButtonPushed--;
  }else{
    //No button was pushed.
- lastButtonPushed =-1;
+ lastButtonPushed--;
  }
 }
 }
@@ -202,7 +202,7 @@ void navigateMenus() {
       break; 
   }
   
-  lastButtonPushed=-1; //reset the lastButtonPushed variable
+  lastButtonPushed--; //reset the lastButtonPushed variable
 }
 
 
